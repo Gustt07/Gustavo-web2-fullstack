@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  background: #0a0813;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(120, 72, 255, 0.2), transparent 28%),
+    radial-gradient(circle at top right, rgba(149, 84, 255, 0.13), transparent 24%),
+    linear-gradient(180deg, #0b0814 0%, #120d20 45%, #090710 100%);
+  color: #f2ebff;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid rgba(171, 142, 255, 0.75);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: rgba(145, 101, 255, 0.35);
+  color: #ffffff;
+}
